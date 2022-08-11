@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a689b5c653.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-3">Person Management System</span>
+            </a>
+
+                
+
+            <ul class="nav nav-pills">
+
+            <li class="nav-item"><a href="index.html" class="nav-link active " aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link link-dark">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link link-dark">Contact</a></li>
+
+            </ul>
+        </header>
+    </div>
+   
+
+
+    <!-- main body -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">sry data not found</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="name"></p>
+                <p id="username"></p>
+                <p id="email"></p>
+                <p id="adress"></p>
+                <p id="phone"></p>
+                <p id="website"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+    
+
+    <div class="container text-center middle">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center p-3  display-1 fw-bold">Person Details</h1>
+            <a href="home.html"><div class="d-grid gap-2 col-6 mx-auto">
+                <br>
+                <button class="btn btn-dark" type="button"><h2>All Persons Data</h2></button>
+            </div></a>
+            <br>
+            <br>
+            <div>OR</div>
+            <div>
+                <br>
+                <br>
+                <h3>Login to See the User Details</h3>
+                <br>
+                <div class="row g-2">
+                    <div class="col-lg-8">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" >
+                        <label for="floatingInputGrid">Person Id</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <!-- <div class="form-floating"> -->
+                          <!-- <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com"> -->
+                          <button type="button" class="btn btn-dark form-control " id="person_btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><h3><i class="fa fa-search" aria-hidden="true"></i></h3></button>
+                        <!-- </div> -->
+                      </div>
+
+                  </div>
+            </div>
+            
+          </div>
+          <div class="col ms-1">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="1500">
+                    <img src="images/second.png" class="d-block w-100" alt="..." height="510px">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="1500">
+                    <img src="images/third.png" class="d-block w-100" alt="..." height="510px">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="1500">
+                    <img src="images/first.webp" class="d-block w-100" alt="..." height="510px">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">A person Managent system is the core part of an organization.It is storing our all the records of the person and their personal details also.It also helps in the improvent of the flow of conduct of the Current System.</p>
+                </div>
+    
+
+    
+                <div class="col-xs-6 col-md-3 ms-auto">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+                </div>
+            </div>
+            <hr>
+            </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; Dhruv Gogna</a>.
+                </p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="https://www.instagram.com/dhruvgogna04/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a class="twitter" href="https://www.linkedin.com/in/dhruv-gogna-9581031bb/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="dribbble" href="https://twitter.com/d_gogna04" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="linkedin" href="https://github.com/Dgogna" target="_blank"><i class="fa fa-github"></i></a></li>   
+                </ul>
+                </div>
+            </div>
+            </div>
+    </footer>
+
+
+
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>
